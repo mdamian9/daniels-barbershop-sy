@@ -7,7 +7,7 @@ class HomePage extends Component {
         return (
             <div>
                 <div className="og-logo">
-                    <img src="/assets/images/logo_og.jpeg" alt="original-logo" />
+                    <img id="og-logo" src="/assets/images/logo_og.jpg" alt="original-logo" />
                 </div>
                 <Navbar />
             </div>

@@ -2,3 +2,8 @@
     margin: 0 auto;
     text-align: center;
 }
+
+#og-logo {
+    width: 250px;
+    height: 250px;
+}
