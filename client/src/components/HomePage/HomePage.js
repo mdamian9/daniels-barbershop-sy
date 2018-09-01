@@ -10,6 +10,9 @@ class HomePage extends Component {
                     <img id="og-logo" src="/assets/images/logo_og.jpg" alt="original-logo" />
                 </div>
                 <Navbar />
+                <main>
+                    <p>This is the page content!</p>
+                </main>
             </div>
         );
     };
