@@ -6,9 +6,9 @@ const navbar = (props) => {
     return (
         <header className="nav-component">
             <nav className="nav-navigation">
-                <div>
+                <div className="navbar-toggle-button">
                     <DrawerToggleButton
-                    click={props.drawerClickHandler}
+                        click={props.drawerClickHandler}
                     />
                 </div>
                 <div className="nav-logo"><a href="/">HOME</a></div>
