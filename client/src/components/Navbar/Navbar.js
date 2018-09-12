@@ -18,6 +18,8 @@ const navbar = (props) => {
                         <li><a href="/">Link 1</a></li>
                         <li><a href="/">Link 2</a></li>
                         <li><a href="/">Link 3</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i className="fab fa-instagram"></i>
+                        </a></li>
                     </ul>
                 </div>
             </nav>
