@@ -1,2 +1,1 @@
-export {default} from "./SideDrawer"
-export {default} from "./DrawerToggleButton"
+export {default} from "./SideDrawer";
