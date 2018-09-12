@@ -1,4 +1,5 @@
 .nav-component {
+    position: fixed;
     width: 100%;
     height: 55px;
     background-color: #27364d;
