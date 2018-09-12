@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
+import Backdrop from "../Backdrop";
 import "./HomePage.css";
 
 const homePage = (props) => {
@@ -11,6 +12,7 @@ const homePage = (props) => {
             </div>
             <Navbar />
             <SideDrawer />
+            <Backdrop />
             <main>
                 <p>This is the page content!</p>
             </main>
