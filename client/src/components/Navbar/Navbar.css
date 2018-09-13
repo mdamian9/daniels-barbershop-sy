@@ -51,6 +51,10 @@
     .nav-links {
         display: none;
     }
+
+    #spacer-two {
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
@@ -60,5 +64,9 @@
 
     .nav-logo {
         margin-left: 0;
+    }
+
+    #spacer-one {
+        display: none;
     }
 }

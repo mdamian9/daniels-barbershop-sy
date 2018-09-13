@@ -11,15 +11,25 @@ const navbar = (props) => {
                         click={props.drawerClickHandler}
                     />
                 </div>
-                <div className="nav-logo"><a href="/">HOME</a></div>
-                <div className="nav-spacer" />
+                <div id="spacer-one" className="nav-spacer" />
+                <div className="nav-logo">
+                    <a href="/"><i class="fas fa-angle-double-right"></i>&nbsp;HOME</a>
+                </div>
+                <div id="spacer-two" className="nav-spacer" />
                 <div className="nav-links">
                     <ul>
-                        <li><a href="/">Link 1</a></li>
-                        <li><a href="/">Link 2</a></li>
-                        <li><a href="/">Link 3</a></li>
-                        <li><a href="https://instagram.com" target="_blank"><i className="fab fa-instagram"></i>
-                        </a></li>
+                        <li><a href="/gallery">Gallery <i className="fas fa-camera"></i></a></li>
+                        <li><a href="/appointments">Appointments <i className="fas fa-clipboard-list"></i></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/danielsbarbershop_/" target="_blank">
+                                Instagram <i className="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.yelp.com/biz/daniels-barbershop-san-diego" target="_blank">
+                                Yelp <i className="fab fa-yelp"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

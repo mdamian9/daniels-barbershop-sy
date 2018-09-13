@@ -40,8 +40,8 @@ class HomePage extends Component {
                     show={this.state.sideDrawerOpen}
                 />
                 {backdrop}
-                <main>
-                    <p>This is the page content!</p>
+                <main className="text-center">
+                    <p><b>Site under construction.</b></p>
                 </main>
             </div>
         );
