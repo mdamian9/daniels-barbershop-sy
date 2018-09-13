@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
 import Backdrop from "../Backdrop";
+import Footer from "../Footer";
 import "./HomePage.css";
 
 class HomePage extends Component {
@@ -43,6 +44,7 @@ class HomePage extends Component {
                 <main className="text-center">
                     <p><b>Site under construction.</b></p>
                 </main>
+                <Footer />
             </div>
         );
     };
