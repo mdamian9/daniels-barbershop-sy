@@ -6,16 +6,13 @@ const navbar = (props) => {
     return (
         <header className="nav-component">
             <nav className="nav-navigation">
-                <div className="navbar-toggle-button">
-                    <DrawerToggleButton
-                        click={props.drawerClickHandler}
-                    />
-                </div>
-                <div id="spacer-one" className="nav-spacer" />
                 <div className="nav-logo">
-                    <a href="/"><i class="fas fa-angle-double-right"></i>&nbsp;HOME</a>
+                    <a href="/">
+                        <i class="fas fa-angle-double-right"></i>
+                        &nbsp;HOME
+                    </a>
                 </div>
-                <div id="spacer-two" className="nav-spacer" />
+                <div className="nav-spacer" />
                 <div className="nav-links">
                     <ul>
                         <li><a href="/gallery">Gallery <i className="fas fa-camera"></i></a></li>
@@ -31,6 +28,11 @@ const navbar = (props) => {
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div className="navbar-toggle-button">
+                    <DrawerToggleButton
+                        click={props.drawerClickHandler}
+                    />
                 </div>
             </nav>
         </header>
