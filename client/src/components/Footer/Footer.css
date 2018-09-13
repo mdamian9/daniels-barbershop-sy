@@ -26,3 +26,9 @@
 .footer-content a:active {
     color: lightblue;
 }
+
+@media (max-width: 768px) {
+    .footer-component {
+        display: none;
+    }
+}
