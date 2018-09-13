@@ -11,17 +11,19 @@ const sideDrawer = (props) => {
     return (
         <nav className={drawerClasses}>
             <ul>
-                <li><a href="/gallery">Gallery <i className="fas fa-camera"></i></a></li>
-                <li><a href="/appointments">Appointments <i className="fas fa-clipboard-list"></i></a></li>
+                <li><a href="/gallery"><i className="fas fa-camera"></i>&nbsp;Gallery</a></li>
+                <li><a href="/appointments"><i className="fas fa-clipboard-list"></i>&nbsp;Appointments</a></li>
+                <li><a href="/location"><i class="fas fa-map-marker-alt"></i>&nbsp;Location</a></li>
+                <li><a href="/contact"><i class="fas fa-envelope-square"></i>&nbsp;Contact</a></li>
                 <li>
                     <a href="https://www.instagram.com/danielsbarbershop_/" target="_blank">
-                        Instagram <i className="fab fa-instagram"></i>
-                    </a>
+                        <i className="fab fa-instagram"></i>&nbsp;Instagram
+                            </a>
                 </li>
                 <li>
                     <a href="https://www.yelp.com/biz/daniels-barbershop-san-diego" target="_blank">
-                        Yelp <i className="fab fa-yelp"></i>
-                    </a>
+                        <i className="fab fa-yelp"></i>&nbsp;Yelp
+                            </a>
                 </li>
             </ul>
         </nav>
