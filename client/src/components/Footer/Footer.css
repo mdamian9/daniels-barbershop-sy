@@ -4,3 +4,25 @@
     background-color: #27364d;
     color: white;
 }
+
+.footer-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.footer-content .dot {
+    font-size: 4px;
+}
+
+.footer-content a {
+    font-size: 24px;
+    color: white;
+}
+
+.footer-content a:hover,
+.footer-content a:active {
+    color: lightblue;
+}

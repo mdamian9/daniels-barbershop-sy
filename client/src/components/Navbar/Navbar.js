@@ -21,12 +21,12 @@ const navbar = (props) => {
                         <li><a href="/contact"><i class="fas fa-envelope-square"></i>&nbsp;Contact</a></li>
                         <li>
                             <a href="https://www.instagram.com/danielsbarbershop_/" target="_blank">
-                            <i className="fab fa-instagram"></i>&nbsp;Instagram
+                                <i className="fab fa-instagram"></i>&nbsp;Instagram
                             </a>
                         </li>
                         <li>
                             <a href="https://www.yelp.com/biz/daniels-barbershop-san-diego" target="_blank">
-                            <i className="fab fa-yelp"></i>&nbsp;Yelp
+                                <i className="fab fa-yelp"></i>&nbsp;Yelp
                             </a>
                         </li>
                     </ul>
