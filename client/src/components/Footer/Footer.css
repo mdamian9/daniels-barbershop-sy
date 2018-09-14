@@ -26,12 +26,38 @@
     font-size: 24px;
 }
 
-.footer-content a:hover,
-.footer-content a:active {
+.footer-content i:hover,
+.footer-content i:active {
     color: lightblue;
 }
 
 @media (max-width: 768px) {
+    .footer-content {
+        font-size: 14px;
+        color: lightblue;
+    }
+
+    .footer-content a,
+    .footer-content i {
+        color: lightblue;
+    }
+
+    .footer-content i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 544px) {
+    .footer-content {
+        font-size: 12px;
+    }
+
+    .footer-content i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 470px) {
     .footer-content {
         font-size: 10px;
     }
@@ -40,3 +66,5 @@
         font-size: 12px;
     }
 }
+
+
