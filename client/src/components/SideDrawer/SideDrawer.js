@@ -18,12 +18,12 @@ const sideDrawer = (props) => {
                 <li>
                     <a href="https://www.instagram.com/danielsbarbershop_/" target="_blank">
                         <i className="fab fa-instagram"></i>&nbsp;Instagram
-                            </a>
+                    </a>
                 </li>
                 <li>
                     <a href="https://www.yelp.com/biz/daniels-barbershop-san-diego" target="_blank">
                         <i className="fab fa-yelp"></i>&nbsp;Yelp
-                            </a>
+                    </a>
                 </li>
             </ul>
         </nav>

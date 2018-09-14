@@ -17,9 +17,13 @@
     font-size: 4px;
 }
 
-.footer-content a {
-    font-size: 24px;
+.footer-content a,
+.footer-content i {
     color: white;
+}
+
+.footer-content i {
+    font-size: 24px;
 }
 
 .footer-content a:hover,
@@ -28,7 +32,11 @@
 }
 
 @media (max-width: 768px) {
-    .footer-component {
-        display: none;
+    .footer-content {
+        font-size: 10px;
+    }
+
+    .footer-content i {
+        font-size: 12px;
     }
 }
