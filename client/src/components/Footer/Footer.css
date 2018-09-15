@@ -27,7 +27,9 @@
 }
 
 .footer-content i:hover,
-.footer-content i:active {
+.footer-content i:active,
+.footer-content a:hover,
+.footer-content a:active {
     color: lightblue;
 }
 
@@ -47,7 +49,7 @@
     }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 577px) {
     .footer-content {
         font-size: 12px;
     }
@@ -57,13 +59,23 @@
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 496px) {
     .footer-content {
         font-size: 10px;
     }
 
     .footer-content i {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 421px) {
+    .footer-content {
+        font-size: 8px;
+    }
+
+    .footer-content i {
+        font-size: 10px;
     }
 }
 
