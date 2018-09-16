@@ -10,3 +10,23 @@ main {
     width: 250px;
     height: 250px;
 }
+
+.appt-form {
+    width: 40%;
+    margin: 50px auto;
+}
+
+.form-group {
+    margin: 20px 10px;
+}
+
+.btn {
+    background-color: #27364d;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .appt-form {
+        width: 70%;
+    }
+}

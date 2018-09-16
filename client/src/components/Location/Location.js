@@ -42,7 +42,7 @@ class Location extends Component {
                 />
                 {backdrop}
                 <main className="text-center">
-                    <h1><i>Gallery</i></h1>
+                    <h1><i>Location</i></h1>
                     <p><b>Site under construction.</b></p>
                 </main>
                 <Footer />
