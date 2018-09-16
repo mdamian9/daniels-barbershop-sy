@@ -7,7 +7,7 @@ const navbar = (props) => {
         <header className="nav-component">
             <nav className="nav-navigation">
                 <div className="nav-logo">
-                    <a href="/">
+                    <a href="/home">
                         <i class="fas fa-angle-double-right"></i>
                         &nbsp;HOME
                     </a>
