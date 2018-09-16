@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
 import Backdrop from "../Backdrop";
+import AppointmentForm from "../AppointmentForm";
 import DatePicker from "react-datepicker";
 import Footer from "../Footer";
 import "./Appointments.css";
@@ -52,8 +53,9 @@ class Appointments extends Component {
                     <header className="text-center">
                         <h1><i>Appointments</i></h1>
                     </header>
-                    <div className="card appt-form">
-                        <form onSubmit={this.formSubmitHandler}>
+                    <AppointmentForm />
+                    {/* <div className="card appt-form">
+                        <form>
                             <div className="form-group">
                                 <label htmlFor="firstName"><b>First name:</b></label>
                                 <input type="text" className="form-control" id="firstName" placeholder="Enter your first name"></input>
@@ -88,7 +90,7 @@ class Appointments extends Component {
                                 <button type="submit" className="btn btn-default">Submit</button>
                             </div>
                         </form>
-                    </div>
+                    </div> */}
                     <div className="text-center">
                         <p><b>Site under construction.</b></p>
                     </div>
