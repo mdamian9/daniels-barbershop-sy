@@ -3,9 +3,9 @@ import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
 import Backdrop from "../Backdrop";
 import Footer from "../Footer";
-import "./Location.css";
+import "./Contact.css";
 
-class Location extends Component {
+class Contact extends Component {
 
     state = {
         sideDrawerOpen: false
@@ -52,4 +52,4 @@ class Location extends Component {
 
 };
 
-export default Location;
+export default Contact;
