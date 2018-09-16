@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
 import Backdrop from "../Backdrop";
+import DatePicker from "react-datepicker";
 import Footer from "../Footer";
 import "./Appointments.css";
+import 'react-datepicker/dist/react-datepicker.css';
 
 class Appointments extends Component {
 
@@ -69,6 +71,13 @@ class Appointments extends Component {
                             <div className="form-group">
                                 <label for="serviceDescription"><b>Haircut / service description:</b></label>
                                 <textarea className="form-control" id="serviceDescription" rows="3"></textarea>
+                            </div>
+                            <div className="form-group">
+                                <b>Choose a date: </b>
+                                <DatePicker selected={this.state.date}
+                                    onSelect={this.handleSelect} //when day is clicked
+                                    onChange={this.handleChange} //only when value has changed
+                                />
                             </div>
                             <div className="form-group text-center">
                                 <button type="submit" class="btn btn-default">Submit</button>
