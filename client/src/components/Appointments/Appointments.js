@@ -23,6 +23,11 @@ class Appointments extends Component {
         this.setState({ sideDrawerOpen: false });
     };
 
+    formSubmitHandler = (event) => {
+        event.preventDefault();
+        console.log("Form submitted");
+    };
+
     render() {
 
         let backdrop;
@@ -48,39 +53,39 @@ class Appointments extends Component {
                         <h1><i>Appointments</i></h1>
                     </header>
                     <div className="card appt-form">
-                        <form>
+                        <form onSubmit={this.formSubmitHandler}>
                             <div className="form-group">
-                                <label for="firstName"><b>First name:</b></label>
+                                <label htmlFor="firstName"><b>First name:</b></label>
                                 <input type="text" className="form-control" id="firstName" placeholder="Enter your first name"></input>
                             </div>
                             <div className="form-group">
-                                <label for="lastName"><b>Last name:</b></label>
+                                <label htmlFor="lastName"><b>Last name:</b></label>
                                 <input type="text" className="form-control" id="lastName" placeholder="Enter your last name"></input>
                             </div>
                             <div className="form-group">
-                                <label for="firstName"><b>Phone number:</b></label>
+                                <label htmlFor="firstName"><b>Phone number:</b></label>
                                 <input type="text" className="form-control" id="firstName" placeholder="1234567890"></input>
                                 <small>
                                     <i>Enter 10 digit phone number (numbers only)</i>
                                 </small>
                             </div>
                             <div className="form-group">
-                                <label for="userEmail"><b>Email:</b></label>
+                                <label htmlFor="userEmail"><b>Email:</b></label>
                                 <input type="emai" className="form-control" id="userEmail" placeholder="user@email.com"></input>
                             </div>
                             <div className="form-group">
-                                <label for="serviceDescription"><b>Haircut / service description:</b></label>
+                                <label htmlFor="serviceDescription"><b>Haircut / service description:</b></label>
                                 <textarea className="form-control" id="serviceDescription" rows="3"></textarea>
                             </div>
                             <div className="form-group">
                                 <b>Choose a date: </b>
                                 <DatePicker selected={this.state.date}
-                                    onSelect={this.handleSelect} //when day is clicked
-                                    onChange={this.handleChange} //only when value has changed
+                                    onSelect={this.handleSelect} // when day is clicked
+                                    onChange={this.handleChange} // only when value has changed
                                 />
                             </div>
                             <div className="form-group text-center">
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                <button type="submit" className="btn btn-default">Submit</button>
                             </div>
                         </form>
                     </div>

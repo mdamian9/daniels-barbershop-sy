@@ -13,8 +13,8 @@ const sideDrawer = (props) => {
             <ul>
                 <li><a href="/gallery"><i className="fas fa-camera"></i>&nbsp;Gallery</a></li>
                 <li><a href="/appointments"><i className="fas fa-clipboard-list"></i>&nbsp;Appointments</a></li>
-                <li><a href="/location"><i class="fas fa-map-marker-alt"></i>&nbsp;Location</a></li>
-                <li><a href="/contact"><i class="fas fa-envelope-square"></i>&nbsp;Contact</a></li>
+                <li><a href="/location"><i className="fas fa-map-marker-alt"></i>&nbsp;Location</a></li>
+                <li><a href="/contact"><i className="fas fa-envelope-square"></i>&nbsp;Contact</a></li>
                 <li>
                     <a href="https://www.instagram.com/danielsbarbershop_/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-instagram"></i>&nbsp;Instagram
