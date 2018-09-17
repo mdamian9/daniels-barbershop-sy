@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import DatePicker from "react-datepicker";
-import moment from "moment";
 import "./AppointmentForm.css";
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -10,11 +9,11 @@ class AppointmentForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstName: '',
-            lastName: '',
-            phoneNumber: '',
-            userEmail: '',
-            description: ''
+            firstName: ''
+            // lastName: '',
+            // phoneNumber: '',
+            // userEmail: '',
+            // description: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -23,16 +22,16 @@ class AppointmentForm extends Component {
 
     handleChange(event) {
         this.setState({
-            firstName: event.target.firstName,
-            lastName: event.target.lastName,
-            phoneNumber: event.target.phoneNumber,
-            userEmail: event.target.userEmail,
-            description: event.target.description
+            firstName: event.target.firstName
+            // lastName: event.target.lastName,
+            // phoneNumber: event.target.phoneNumber,
+            // userEmail: event.target.userEmail,
+            // description: event.target.description
         });
     };
 
     handleSubmit(event) {
-        alert('First name:' + this.state.value);
+        alert('First name:' + this.state.firstName);
         event.preventDefault();
     };
 
@@ -73,7 +72,6 @@ class AppointmentForm extends Component {
                     <div className="form-group text-center">
                         <input type="submit" className="btn" value="Submit" />
                     </div>
-                    <input type="submit" value="Submit" />
                 </form>
             </div>
         );

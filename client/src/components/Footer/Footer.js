@@ -11,7 +11,7 @@ const footer = (props) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    161 W San Ysidro Blvd, Suite C, San Diego, CA 92173
+                    161 W San Ysidro Blvd, Suite C<br />San Diego, CA 92173
                 </a>
                 &ensp;&ensp;<i className="fas fa-circle dot"></i>&ensp;&ensp;
                 <a href="https://www.instagram.com/danielsbarbershop_/" target="_blank" rel="noopener noreferrer">
