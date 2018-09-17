@@ -3,10 +3,10 @@ import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
 import Backdrop from "../Backdrop";
 import AppointmentForm from "../AppointmentForm";
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 import Footer from "../Footer";
 import "./Appointments.css";
-import 'react-datepicker/dist/react-datepicker.css';
+// import 'react-datepicker/dist/react-datepicker.css';
 
 class Appointments extends Component {
 

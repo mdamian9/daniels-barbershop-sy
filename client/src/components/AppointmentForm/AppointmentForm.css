@@ -1,0 +1,23 @@
+.appt-form {
+    width: 40%;
+    margin: 50px auto;
+}
+
+.form-group {
+    margin: 20px 10px;
+}
+
+.btn {
+    background-color: #27364d;
+    color: white;
+}
+
+.date-picker {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .appt-form {
+        width: 70%;
+    }
+}

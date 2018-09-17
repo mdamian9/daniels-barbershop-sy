@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DatePicker from "react-datepicker";
+import moment from "moment";
 import "./AppointmentForm.css";
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -27,20 +28,16 @@ class AppointmentForm extends Component {
         return (
             <div className="card appt-form">
                 <form onSubmit={this.handleSubmit}>
-                    <label>
-                        <div className="form-group">
-                            <label htmlFor="firstName"><b>First name:</b></label>
-                            <input type="text" className="form-control" id="firstName" placeholder="Enter your first name" value={this.state.value} onChange={this.handleChange} />
-                        </div>
-                    </label>
-                    <input type="submit" value="Submit" />
-
-                    {/* <div className="form-group">
-                        <label htmlFor="lastName"><b>Last name:</b></label>
-                        <input type="text" className="form-control" id="lastName" placeholder="Enter your last name"></input>
+                    <div className="form-group">
+                        <label htmlFor="firstName"><b>First name:</b></label>
+                        <input type="text" className="form-control" id="firstName" placeholder="Enter your first name" value={this.state.value} onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="firstName"><b>Phone number:</b></label>
+                        <label htmlFor="lastName"><b>Last name:</b></label>
+                        <input type="text" className="form-control" id="lastName" placeholder="Enter your last name" value={this.state.value} onChange={this.handleChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="phoneNumber"><b>Phone number:</b></label>
                         <input type="text" className="form-control" id="firstName" placeholder="1234567890"></input>
                         <small>
                             <i>Enter 10 digit phone number (numbers only)</i>
@@ -52,19 +49,19 @@ class AppointmentForm extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="serviceDescription"><b>Haircut / service description:</b></label>
-                        <textarea className="form-control" id="serviceDescription" rows="3"></textarea>
+                        <textarea className="form-control" id="serviceDescription" rows="3" value={this.state.value} onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
                         <b>Choose a date: </b>
-                        <DatePicker selected={this.state.date}
-                            onSelect={this.handleSelect} // when day is clicked
-                            onChange={this.handleChange} // only when value has changed
+                        <DatePicker
+                            className="date-picker"
+                            selected={this.state.startDate}
                         />
                     </div>
                     <div className="form-group text-center">
                         <button type="submit" className="btn btn-default">Submit</button>
-                    </div> */}
-
+                    </div>
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         );
