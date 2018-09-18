@@ -27,7 +27,11 @@ class AppointmentForm extends Component {
     };
 
     handleSubmit(event) {
-        alert('First name:' + this.state.value);
+        console.log(`First name: ${this.state.firstName}
+        Last name: ${this.state.lastName}
+        Phone number: ${this.state.phoneNumber}
+        User email: ${this.state.userEmail}
+        Description: ${this.state.serviceDescription}`.replace(/^(\s{2})+/gm, ''));
         event.preventDefault();
     };
 
@@ -76,3 +80,7 @@ class AppointmentForm extends Component {
 };
 
 export default AppointmentForm;
+
+// To do:
+// 1. Fix date picker / calendar
+// 2. Send form data to database
