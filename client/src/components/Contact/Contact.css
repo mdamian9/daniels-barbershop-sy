@@ -10,3 +10,24 @@ main {
     width: 250px;
     height: 250px;
 }
+
+.contact-card {
+    width: 50%;
+    margin: 50px auto;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #27364d;
+}
+
+.contact-card-content {
+    margin: 20px 0px;
+}
+
+.contact-card-content a{
+    color: black;
+}
+
+.contact-card-content a:hover,
+.contact-card-content a:active {
+    color:lightblue;
+}

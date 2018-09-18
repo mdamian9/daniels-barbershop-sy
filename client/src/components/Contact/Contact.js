@@ -42,7 +42,42 @@ class Contact extends Component {
                 />
                 {backdrop}
                 <main className="text-center">
-                    <h1><i>Contact</i></h1>
+                    <h1><i>Contact Us</i></h1>
+
+                    <div className="card contact-card text-center">
+                        <div className="contact-card-content">
+                            <h2><b>Phone number:</b></h2>
+                            <p>
+                                (619) 371-8571
+                            </p>
+                            <hr />
+                            <h2><b>Email:</b></h2>
+                            <p>
+                                email@email.com
+                            </p>
+                            <hr />
+                            <h2><i className="fab fa-instagram" />&nbsp;<b>Instagram:</b></h2>
+                            <p>
+                                <a href="https://www.instagram.com/danielsbarbershop_/" rel="noopener noreferrer" target="_blank">
+                                    https://www.instagram.com/danielsbarbershop_/
+                                </a>
+                            </p>
+                            <hr />
+                            <h2><i className="fab fa-yelp" />&nbsp;<b>Yelp:</b></h2>
+                            <p>
+                                <a href="https://www.yelp.com/biz/daniels-barbershop-san-diego" rel="noopener noreferrer" target="_blank">
+                                    https://www.yelp.com/biz/daniels-barbershop-san-diego
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div className="card contact-card text-center">
+                        <div className="contact-card-content">
+                            {/* <ContactForm /> */}
+                        </div>
+                    </div>
+
                     <p><b>Site under construction.</b></p>
                 </main>
                 <Footer />
