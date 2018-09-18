@@ -50,13 +50,13 @@ class Appointments extends Component {
                 />
                 {backdrop}
                 <main>
-                    <header className="text-center">
-                        <h1><i>Appointments</i></h1>
-                    </header>
+
+                    <h1 className="text-center"><b><i>Appointments</i></b></h1>
                     <AppointmentForm />
                     <div className="text-center">
                         <p><b>Site under construction.</b></p>
                     </div>
+                    
                 </main>
                 <Footer />
             </div>

@@ -22,13 +22,13 @@ class ContactForm extends Component {
         });
     };
 
+    // function that handles form submission event: will send data to database with new contact / message
     handleSubmit(event) {
         console.log(`First name: ${this.state.firstName}
         Last name: ${this.state.lastName}
         User email: ${this.state.userEmail}
         Message: ${this.state.message}`.replace(/^(\s{2})+/gm, ''));
         event.preventDefault();
-
     };
 
     render() {

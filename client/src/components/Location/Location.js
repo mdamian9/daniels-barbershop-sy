@@ -41,9 +41,14 @@ class Location extends Component {
                     show={this.state.sideDrawerOpen}
                 />
                 {backdrop}
-                <main className="text-center">
-                    <h1><i>Location</i></h1>
-                    <p><b>Site under construction.</b></p>
+                <main>
+
+                    <h1 className="text-center"><b><i>Location</i></b></h1>
+
+                    <div className="text-center">
+                        <p><b>Site under construction.</b></p>
+                    </div>
+
                 </main>
                 <Footer />
             </div>
