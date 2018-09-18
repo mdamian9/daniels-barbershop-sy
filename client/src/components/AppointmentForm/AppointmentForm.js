@@ -85,3 +85,4 @@ export default AppointmentForm;
 // 1. Fix date picker / calendar
 // 2. Send form data to database
 // 3. Twilio API: send text message to owner when appointment is made
+// 4. Email sender API: send email to owner when appointment is made

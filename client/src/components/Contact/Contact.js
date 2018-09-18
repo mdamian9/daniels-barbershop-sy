@@ -43,10 +43,8 @@ class Contact extends Component {
                 />
                 {backdrop}
                 <main>
-                    <header className="text-center">
-                        <h1><i>Contact Us</i></h1>
-                    </header>
-
+                    
+                    <h4 className="text-center"><b><i>Contact Information</i></b></h4>
                     <div className="card contact-card text-center">
                         <div className="contact-card-content">
                             <h2><b>Phone number:</b></h2>
@@ -78,7 +76,7 @@ class Contact extends Component {
                     <br />
                     <br />
 
-                    <h4 className="text-center">Get in touch with us!</h4>
+                    <h4 className="text-center"><b><i>Get in touch with us!</i></b></h4>
                     <ContactForm />
 
                     <div className="text-center">

@@ -23,6 +23,11 @@ class ContactForm extends Component {
     };
 
     handleSubmit(event) {
+        console.log(`First name: ${this.state.firstName}
+        Last name: ${this.state.lastName}
+        User email: ${this.state.userEmail}
+        Message: ${this.state.message}`.replace(/^(\s{2})+/gm, ''));
+        event.preventDefault();
 
     };
 
@@ -44,7 +49,7 @@ class ContactForm extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="message"><b>Message:</b></label>
-                        <textarea className="form-control" name="serviceDescription" rows="4" value={this.state.value} onChange={this.handleChange} />
+                        <textarea className="form-control" name="message" rows="4" value={this.state.value} onChange={this.handleChange} />
                     </div>
                     <div className="form-group text-center">
                         <input type="submit" className="btn" value="Submit" />
@@ -57,3 +62,8 @@ class ContactForm extends Component {
 };
 
 export default ContactForm;
+
+// To do:
+// 1. Send form data to database
+// 2. Twilio API: send text message to owner when new message is sent / new contact made
+// 3. Email sender API: send email to owner when new message is sent
