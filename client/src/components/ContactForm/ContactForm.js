@@ -28,7 +28,7 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <div className="card appt-form">
+            <div className="card contact-form">
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="value"><b>First name:</b></label>

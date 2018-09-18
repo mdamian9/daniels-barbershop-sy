@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../Navbar"
 import SideDrawer from "../SideDrawer";
 import Backdrop from "../Backdrop";
+import ContactForm from "../ContactForm";
 import Footer from "../Footer";
 import "./Contact.css";
 
@@ -41,8 +42,10 @@ class Contact extends Component {
                     show={this.state.sideDrawerOpen}
                 />
                 {backdrop}
-                <main className="text-center">
-                    <h1><i>Contact Us</i></h1>
+                <main>
+                    <header className="text-center">
+                        <h1><i>Contact Us</i></h1>
+                    </header>
 
                     <div className="card contact-card text-center">
                         <div className="contact-card-content">
@@ -70,15 +73,17 @@ class Contact extends Component {
                                 </a>
                             </p>
                         </div>
-                    </div>
-                    
-                    <div className="card contact-card text-center">
-                        <div className="contact-card-content">
-                            {/* <ContactForm /> */}
-                        </div>
-                    </div>
 
-                    <p><b>Site under construction.</b></p>
+                    </div>
+                    <br />
+                    <br />
+
+                    <h4 className="text-center">Get in touch with us!</h4>
+                    <ContactForm />
+
+                    <div className="text-center">
+                        <p><b>Site under construction.</b></p>
+                    </div>
                 </main>
                 <Footer />
             </div>

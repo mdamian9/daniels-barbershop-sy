@@ -13,14 +13,14 @@ main {
 
 .contact-card {
     width: 50%;
-    margin: 50px auto;
+    margin: 20px auto;
     border-width: 5px;
     border-radius: 10px;
     border-color: #27364d;
 }
 
 .contact-card-content {
-    margin: 20px 0px;
+    margin: 10px 10px;
 }
 
 .contact-card-content a{
@@ -30,4 +30,10 @@ main {
 .contact-card-content a:hover,
 .contact-card-content a:active {
     color:lightblue;
+}
+
+@media (max-width: 700px) {
+    .contact-card {
+        width: 70%;
+    }
 }

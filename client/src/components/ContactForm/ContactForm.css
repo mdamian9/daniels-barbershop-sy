@@ -1,0 +1,26 @@
+.contact-form {
+    width: 50%;
+    margin: 20px auto;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #27364d;
+}
+
+.form-group {
+    margin: 20px 10px;
+}
+
+.btn {
+    background-color: #27364d;
+    color: white;
+}
+
+.date-picker {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .contact-form {
+        width: 70%;
+    }
+}
