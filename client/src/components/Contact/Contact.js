@@ -54,7 +54,7 @@ class Contact extends Component {
                             <hr />
                             <h2><b>Email:</b></h2>
                             <p>
-                                email@email.com
+                                danielsbarbershopSY@gmail.com
                             </p>
                             <hr />
                             <h2><i className="fab fa-instagram" />&nbsp;<b>Instagram:</b></h2>
@@ -71,9 +71,9 @@ class Contact extends Component {
                                 </a>
                             </p>
                         </div>
-
                     </div>
                     <br />
+                    <hr style={{ width: "50%"}} />
                     <br />
 
                     <h4 className="text-center"><b><i>Get in touch with us!</i></b></h4>
