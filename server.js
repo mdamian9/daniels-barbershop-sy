@@ -13,6 +13,7 @@ const app = express();
 
 // Routers
 const indexRouter = require('./routes/index');
+const messagesRouter = require('./routes/messagesRouter');
 
 // Use morgan & body-parser
 app.use(logger('dev'));
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Use routers
 app.use('/', indexRouter);
+app.use('/', messagesRouter);
 
 // Send every request to the React app
 // Define any API routes before this runs
