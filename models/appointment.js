@@ -1,11 +1,9 @@
 // Require mongoose
-var mongoose = require("mongoose");
-
-// Get a reference to the mongoose Schema constructor
-var Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new AppointmentSchema object
-var AppointmentSchema = new Schema({
+const appointmentSchema = new Schema({
     firstName: {
         type: String,
         trim: true,
@@ -47,4 +45,4 @@ var AppointmentSchema = new Schema({
 });
 
 // This creates our model from the above schema, using mongoose's model method, and exports that model
-module.exports = mongoose.model("Appointment", AppointmentSchema);
+module.exports = mongoose.model("Appointment", appointmentSchema);
