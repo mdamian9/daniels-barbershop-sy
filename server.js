@@ -4,12 +4,13 @@ const PORT = process.env.PORT || 3001;
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
+const dbUrl = 'mongodb://heroku_rmj2g0c9:r10fi2vajl2erh4e1am8pnjvn5@ds161345.mlab.com:61345/heroku_rmj2g0c9';
 const app = express();
 
 // Connect to remote MongoDB
-// mongoose.connect(dbUrl, { useNewUrlParser: true })
-//   .then(() => { console.log("Connected to MongoDB"); },
-//     err => { console.log(err) });
+mongoose.connect(dbUrl, { useNewUrlParser: true })
+  .then(() => { console.log("Connected to MongoDB"); },
+    err => { console.log(err) });
 
 // Routers
 const indexRouter = require('./routes/index');
